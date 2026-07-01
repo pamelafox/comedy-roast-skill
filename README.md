@@ -35,6 +35,22 @@ This skill queries three MCP servers for roast material. You'll need to have the
 
 > **Note:** The skill gracefully handles missing sources. If a server isn't connected, it roasts the silence instead.
 
+## Optional X/Twitter Source Packets
+
+If the X MCP server is not connected, you can still provide reviewed X/Twitter
+source packets as roast material. For example, an OpenClaw user can export
+recent posts, search results, or account summaries from TweetClaw, then paste
+or attach that packet when asking for a roast.
+
+Treat source packets as read-only evidence:
+
+- Use visible post text, URLs, authors, timestamps, and metrics as material.
+- Do not post, reply, like, follow, unfollow, or mutate the account from this
+  skill.
+- Do not infer private intent from sparse metrics. Roast the observable pattern
+  and mark missing context as missing.
+- Keep secrets, cookies, API keys, and raw session data out of the packet.
+
 ## Usage
 
 Once installed, just ask your coding agent:
